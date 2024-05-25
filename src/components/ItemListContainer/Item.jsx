@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 function Item({ product }) {
     return (
-        <Link to={'../ItemDetailContainer/ItemDetailContainer.jsx'}>
+        <Link to={`/item/${product.id}`}>
             <div className='h-96 w-64 transition-transform transform-gpu hover:scale-110 transition-delay duration-500' >
                 <div className='flex justify-center items-center h-2/3 w-full'>
                     <img src={product.image_link} alt={product.name} className='object-contain' />

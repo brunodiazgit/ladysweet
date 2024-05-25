@@ -10,7 +10,7 @@ function ItemListContainer() {
             try {
                 let response;
                 if (product_type) {
-                    response = await fetch(`http://makeup-api.herokuapp.com/api/v1/products.json?brand=covergirl&product_type=${product_type}`);
+                    response = await fetch(`http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=${product_type}`);
                 } else {
                     response = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline');
                 }

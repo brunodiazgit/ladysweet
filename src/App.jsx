@@ -1,5 +1,6 @@
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import NavBar from "./components/NavBar"
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import {
   BrowserRouter,
   Routes,
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<ItemListContainer />} />
         <Route path="/maybelline/:product_type" element={<ItemListContainer />} />
+        <Route path="/item/:id" element={<ItemDetailContainer />} />
       </Routes>
     </BrowserRouter>
     </>

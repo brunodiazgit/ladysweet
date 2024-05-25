@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom"
+import CartWidget from "./CartWidget"
 
 function NavBar() {
     return (
@@ -29,6 +30,7 @@ function NavBar() {
                                 <Link to={'/maybelline/lipstick'} className="text-white text-2xl hover:text-pink-500 tracking-wider">Lipstick</Link>
                             </li>
                         </ul>
+                        <CartWidget img='../../public/shopping-cart-icon.png'/>
             </div>
         </nav>
     )
