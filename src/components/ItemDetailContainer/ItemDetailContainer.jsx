@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
+import ItemDetail from "./ItemDetail"
 
 function ItemDetailContainer() {
     let { id } = useParams()
@@ -25,15 +26,7 @@ function ItemDetailContainer() {
 
     return (
         <div className="flex justify-center gap-48 items-center pt-28">
-            <div className="flex justify-center items-center">
-                <img className="object-contain h-full w-full" src={detail.image_link} alt={detail.name} />
-            </div>
-            <div className="flex flex-col gap-4 max-w-xl">
-                <h1 className="font-bold text-2xl ">{detail.name}</h1>
-                <p className="text-xl">{detail.description}</p>
-                <p className="text-2xl">U$S {detail.price}</p>
-                <button className="flex justify-center items-center h-14 w-48 rounded-xl bg-pink-500 text-white text-xl hover:bg-pink-800">Add to cart</button>
-            </div>
+            <ItemDetail product={detail} />
         </div>
     )
 }

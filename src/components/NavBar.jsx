@@ -9,25 +9,25 @@ function NavBar() {
                     <div className="text-pink-500 font-bold text-5xl tracking-wide">LadySweet</div>
                         <ul className="flex space-x-8">
                             <li>
-                                <Link to={'/'} className="text-white text-2xl hover:text-pink-500 tracking-wider">Home</Link> 
+                                <Link to={'/'} className="text-white text-2xl hover:text-pink-500 tracking-wide">Home</Link> 
                             </li>
                             <li>
-                                <Link to={'/maybelline/mascara'} className="text-white text-2xl hover:text-pink-500 tracking-wider">Mascara</Link>
+                                <Link to={'/maybelline/mascara'} className="text-white text-2xl hover:text-pink-500 tracking-wide">Mascara</Link>
                             </li>
                             <li>
-                                <Link to={'/maybelline/blush'} className="text-white text-2xl hover:text-pink-500 tracking-wider">Blush</Link>
+                                <Link to={'/maybelline/blush'} className="text-white text-2xl hover:text-pink-500 tracking-wide">Blush</Link>
                             </li>
                             <li>
-                                <Link to={'/maybelline/foundation'} className="text-white text-2xl hover:text-pink-500 tracking-wider">Foundation</Link>
+                                <Link to={'/maybelline/foundation'} className="text-white text-2xl hover:text-pink-500 tracking-wide">Foundation</Link>
                             </li>
                             <li>
-                                <Link to={'/maybelline/eyeshadow'} className="text-white text-2xl hover:text-pink-500 tracking-wider">Eyeshadow</Link>
+                                <Link to={'/maybelline/eyeshadow'} className="text-white text-2xl hover:text-pink-500 tracking-wide">Eyeshadow</Link>
                             </li>
                             <li>
-                                <Link to={'/maybelline/eyeliner'} className="text-white text-2xl hover:text-pink-500 tracking-wider">Eyeliner</Link>
+                                <Link to={'/maybelline/eyeliner'} className="text-white text-2xl hover:text-pink-500 tracking-wide">Eyeliner</Link>
                             </li>
                             <li>
-                                <Link to={'/maybelline/lipstick'} className="text-white text-2xl hover:text-pink-500 tracking-wider">Lipstick</Link>
+                                <Link to={'/maybelline/lipstick'} className="text-white text-2xl hover:text-pink-500 tracking-wide">Lipstick</Link>
                             </li>
                         </ul>
                         <CartWidget img='../../public/shopping-cart-icon.png'/>
