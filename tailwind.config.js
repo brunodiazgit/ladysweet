@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -6,11 +7,16 @@ export default {
   ],
   theme: {
     extend: {
-      gridTemplateRows:{
-        /* '100' : 'repeat(100, minmax(0,1fr))' */
+      filter: {
+        'red-hover': 'brightness(0) saturate(100%) invert(22%) sepia(100%) saturate(7463%) hue-rotate(1deg) brightness(101%) contrast(102%);',
       }
     },
   },
-  plugins: [],
+  variants: {
+    filter: ['responsive', 'hover'],
+  },
+  plugins: [
+    require('tailwindcss-filters'),
+  ],
 }
 
