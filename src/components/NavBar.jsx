@@ -6,7 +6,7 @@ function NavBar() {
     return (
         <nav className="bg-black p-4 sticky top-0 z-10">
             <div className="flex items-center justify-around container mx-auto min-h-14">
-                    <div className="text-pink-500 font-bold text-5xl tracking-wide">LadySweet</div>
+                    <Link to={'/'} className="text-pink-500 font-bold text-5xl tracking-wide">LadySweet</Link>
                         <ul className="flex space-x-8">
                             <li>
                                 <Link to={'/'} className="text-white text-2xl hover:text-pink-500 tracking-wide">Home</Link> 
