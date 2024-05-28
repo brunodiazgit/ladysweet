@@ -1,11 +1,13 @@
 import { useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
 import ItemDetail from "./ItemDetail"
+import Loader from "../Loader"
 
 function ItemDetailContainer() {
     let { id } = useParams()
 
     const [detail, setDetail] = useState([])
+    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
         const fetchApi = async () => {
@@ -18,6 +20,8 @@ function ItemDetailContainer() {
                 setDetail(data)
             } catch (e) {
                 console.log("there was an error: " + e)
+            } finally{
+                setLoading(false)
             }
 
         }
@@ -26,7 +30,7 @@ function ItemDetailContainer() {
 
     return (
         <div className="flex justify-center gap-48 items-center pt-28">
-            <ItemDetail product={detail} />
+            {loading ? <Loader/> : <ItemDetail product={detail} />}
         </div>
     )
 }

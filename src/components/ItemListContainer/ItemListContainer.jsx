@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react';
 import ItemList from './ItemList';
 import { useParams } from 'react-router-dom';
+import Loader from '../Loader';
 
 function ItemListContainer() {
     const [items, setItems] = useState([]);
+    const [loading, setLoading] = useState(true)
+
     let { product_type } = useParams()
     useEffect(() => {
         const fetchAPI = async () => {
@@ -22,6 +25,8 @@ function ItemListContainer() {
                 setItems(data);
             } catch (e) {
                 console.log("there was an error: " + e)
+            } finally {
+                setLoading(false)
             }
         };
         fetchAPI();
@@ -29,7 +34,7 @@ function ItemListContainer() {
 
     return (
         <div className='flex flex-wrap gap-8 p-12 justify-center items-center'>
-            <ItemList products={items} />
+            {loading ? <Loader/> : <ItemList products={items} />}
         </div>
     );
 }
