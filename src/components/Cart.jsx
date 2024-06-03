@@ -6,7 +6,7 @@ function Cart() {
     const { cart, getTotal } = useCart()
 
     return (
-        <div className="flex flex-col items-center pt-20 pb-20">
+        <div className="flex flex-col items-center min-h-screen pt-20">
             {cart.map(item => (
                 <CartItem item={item} key={item.id} />
             ))}

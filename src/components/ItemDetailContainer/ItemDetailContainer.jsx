@@ -29,7 +29,7 @@ function ItemDetailContainer() {
     }, [id])
 
     return (
-        <div className="flex justify-center gap-48 items-center pt-28">
+        <div className="flex justify-center min-h-screen gap-48 items-start pt-48">
             {loading ? <Loader/> : <ItemDetail product={detail} />}
         </div>
     )

@@ -8,6 +8,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<CheckoutForm />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
     </>
   )
