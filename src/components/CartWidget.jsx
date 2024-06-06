@@ -8,7 +8,7 @@ function CartWidget({ img }) {
     return (
         <Link to={'/cart'}>
             <div className="flex">
-                <img src={img} alt="Icon cart" />
+                <img src={img} alt="Icon cart" className=" object-contain md:w-8 md:h-8 laptop:w-12 laptop:h-12" />
                 <p className=" text-green-500">{totalQuantity}</p>
             </div>
         </Link>

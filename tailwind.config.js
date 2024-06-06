@@ -6,10 +6,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      'laptop': '1025px',
+      'md': '800px',
+      'xs': '460px'
+      // => @media (min-width: 1025px) { ... }
+    },
     extend: {
-      filter: {
-        'red-hover': 'brightness(0) saturate(100%) invert(22%) sepia(100%) saturate(7463%) hue-rotate(1deg) brightness(101%) contrast(102%);',
-      }
     },
   },
   variants: {

@@ -7,7 +7,7 @@ import { useCart } from './context/CartContext'
 const MySwal = withReactContent(Swal)
 
 function CheckoutForm() {
-    const {setCart} = useCart()
+    const { setCart } = useCart()
 
     const [formValues, setFormValues] = useState({
         name: '',
@@ -42,8 +42,8 @@ function CheckoutForm() {
     };
 
     return (
-        <div className="flex justify-center items-start mt-12 min-h-screen">
-            <form onSubmit={handleSubmit} className="w-[8.5in] h-[9in] flex flex-col gap-10 bg-gray-900 p-10 rounded-2xl">
+        <div className="flex justify-center items-start pt-24 min-h-screen p-10">
+            <form onSubmit={handleSubmit} className="w-[8.5in] h-[6in] md:h-[7in] md:w-[7in] flex flex-col gap-10 bg-gray-900 p-10 rounded-2xl">
                 <h1 className="text-pink-500 font-bold text-5xl tracking-wide">LadySweet</h1>
                 <FormInput
                     type='text'

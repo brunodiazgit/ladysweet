@@ -6,13 +6,13 @@ function CartItem({item}) {
     const {updateCartQuantity, removeFromCart} = useCart() 
 
     return (
-        <div className="flex justify-between items-center w-full max-w-4xl gap-x-10 mb-4">
-            <div className="flex items-center gap-x-10">
+        <div className="flex flex-col md:flex-row gap-10 md:gap-0 justify-between items-center w-full max-w-4xl  mb-4">
+            <div className="flex flex-col md:flex-row items-center gap-x-10">
                 <img src={item.image_link} alt={item.name} />
-                <div>
-                    <h1 className=" text-xl">{item.name}</h1>
+                <div className="">
+                    <h1 className="text-xl ">{item.name}</h1>
                     <p className="text-xl">U$S {item.price}</p>
-                </div>
+                </div> 
             </div>
             <div className="flex items-center">
                 <button
