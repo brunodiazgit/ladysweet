@@ -12,7 +12,7 @@ function ItemDetailContainer() {
     useEffect(() => {
         const fetchApi = async () => {
             try {
-                const response = await fetch(`http://makeup-api.herokuapp.com/api/v1/products/${id}.json?brand=maybelline`)
+                const response = await fetch(`https://makeup-api.herokuapp.com/api/v1/products/${id}.json?brand=maybelline`)
                 if (!response.ok) {
                     throw new Error('Network response was not ok')
                 }

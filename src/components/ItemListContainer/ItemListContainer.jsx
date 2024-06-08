@@ -13,9 +13,9 @@ function ItemListContainer() {
             try {
                 let response;
                 if (product_type) {
-                    response = await fetch(`http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=${product_type}`)
+                    response = await fetch(`https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=${product_type}`)
                 } else {
-                    response = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline')
+                    response = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline')
                 }
                 if (!response.ok) {
                     throw new Error('Network response was not ok')
