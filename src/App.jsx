@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/ladysweet">
       <NavBar/>
       <Routes>
         <Route path="/" element={<ItemListContainer />} />
