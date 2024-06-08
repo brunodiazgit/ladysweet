@@ -28,7 +28,7 @@ function CartItem({item}) {
                     onClick={() => removeFromCart(item.id)}
                     className="ml-4 "
                 >
-                    <img className="w-8" src="../../public/trashIcon.svg" alt="Trash Icon" />
+                    <img className="w-8" src={`${import.meta.env.BASE_URL}trashIcon.svg`} alt="Ícono de Basura" />
                 </button>
             </div>
         </div>

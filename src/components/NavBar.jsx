@@ -40,7 +40,7 @@ function NavBar() {
                         <Link to={'/maybelline/lipstick'} className="text-white text-2xl hover:text-pink-500 tracking-wide md:text-base laptop:text-2xl">Lipstick</Link>
                     </li>
                 </ul>
-                <CartWidget img='../../public/shopping-cart-icon.png'/>
+                <CartWidget img={`${import.meta.env.BASE_URL}shopping-cart-icon.png`} />
             </div>
         </nav>
     );
